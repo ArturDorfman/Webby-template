@@ -174,14 +174,14 @@ body {
 // ---------------------------------section-banner-------------------------------------
 .banner {
 	height: 100vh;
-	background: no-repeat url("../../images/bg/banner-bg.jpg");
+	background: no-repeat url("../images/bg/banner-bg.jpg");
 	background-position: center;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 
 	@include _979 {
-		background: no-repeat url("../../images/bg/banner-bg-sm.jpg");
+		background: no-repeat url("../images/bg/banner-bg-sm.jpg");
 		background-size: cover;
 		background-position: right 40% bottom 65%;
 	}
@@ -329,7 +329,7 @@ body {
 	&__img {
 		width: 50%;
 		height: 570px;
-		background: no-repeat center url("../../images/skill.jpg");
+		background: no-repeat center url("../images/skill.jpg");
 		background-size: cover;
 		@include _1170 {
 			height: 400px;
