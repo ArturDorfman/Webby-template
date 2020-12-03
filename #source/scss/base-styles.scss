@@ -1,0 +1,71 @@
+@import "media_mixin";
+// variebles
+$title-font: "Montserrat", sans-serif;
+$text-font: "Nunito Sans", sans-serif;
+$primary-color: #10c9c3;
+$title-color: #1d1d1d;
+$text-color: #787878;
+
+// common styles
+.inner {
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0px 10px;
+	@include _1240 {
+		max-width: 1100px;
+	}
+	@include _1170 {
+		max-width: 900px;
+	}
+	@include _979 {
+		max-width: 700px;
+	}
+	@include _768 {
+		max-width: 520px;
+		padding: 0 20px;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $title-font;
+	font-weight: 500;
+	color: $title-color;
+}
+
+p {
+	font-family: $text-font;
+	font-weight: 400;
+	color: $text-color;
+}
+
+.button {
+	width: 180px;
+	height: 54px;
+	background-color: $primary-color;
+	@include _979 {
+		width: 160px;
+		height: 40px;
+	}
+	@include _480 {
+		width: 200px;
+		height: 60px;
+	}
+
+	span {
+		color: #ffffff;
+		font-family: $title-font;
+		font-size: 12px;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		line-height: normal;
+		@include _480 {
+			font-size: 18px;
+		}
+	}
+}
