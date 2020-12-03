@@ -170,13 +170,12 @@ body {
 	@include _979 {
 		background: no-repeat url("../../images/bg/banner-bg-sm.jpg");
 		background-size: cover;
+		background-position: right 40% bottom 65%;
 	}
 	@include _768 {
 		background-position: center;
 	}
-	@include _480 {
-		background-position: right 40% bottom 65%;
-	}
+
 	&__wrap {
 		height: 100%;
 		display: flex;

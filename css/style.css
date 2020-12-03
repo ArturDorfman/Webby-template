@@ -569,16 +569,12 @@ p {
   .banner {
     background: no-repeat url("../../images/bg/banner-bg-sm.jpg");
     background-size: cover;
+    background-position: right 40% bottom 65%;
   }
 }
 @media (max-width: 768px) {
   .banner {
     background-position: center;
-  }
-}
-@media (max-width: 480px) {
-  .banner {
-    background-position: right 40% bottom 65%;
   }
 }
 .banner__wrap {
