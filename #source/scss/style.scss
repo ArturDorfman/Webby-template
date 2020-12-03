@@ -164,6 +164,8 @@ body {
 .banner {
 	height: 100vh;
 	background: no-repeat url("../../images/bg/banner-bg.jpg");
+	background-position: center;
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 
