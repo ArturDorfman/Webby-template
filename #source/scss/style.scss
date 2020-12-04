@@ -1,8 +1,7 @@
 @import "nullstyle";
 @import "base-styles";
 @import "media_mixin";
-@import "slick-theme";
-@import "slick";
+@import "swiper";
 
 body {
 	@include _768 {
@@ -564,26 +563,34 @@ body {
 	@include _768 {
 		padding: 0;
 	}
-	&__content {
+}
+.services-slider {
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -35px;
+		@include _979 {
+			margin: 0;
+			justify-content: center;
+		}
+		@include _768 {
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+		}
+	}
+
+	&__slide {
 		padding: 30px 35px;
 		width: 25%;
 		text-align: center;
-
 		@include _1170 {
 			padding: 15px 15px;
 		}
 		@include _979 {
 			width: 33.33%;
-			justify-content: center;
 		}
-	}
-	&__wrap {
-		display: flex;
-		flex-flow: row wrap;
-		margin: 0 -35px;
-		@include _979 {
-			margin: 0;
-			justify-content: center;
+		@include _768 {
+			width: 100%;
 		}
 	}
 	&__logo {
@@ -595,38 +602,31 @@ body {
 		text-transform: uppercase;
 	}
 	&__text {
-		margin: 0 auto;
 		font-size: 17px;
 	}
 }
-
 // ---------------------------------section-testimonials-------------------------------------
 
 .testimonials {
 	background-color: $primary-color;
 }
 
-.slick-slider {
-	display: block;
-	padding: 179px 0;
-	width: 810px;
-	margin: 0 auto;
-	@include _1170 {
-		padding: 100px 0;
-		width: 100%;
+.text-slider {
+	&__wrapper {
+		padding: 179px 0;
+		@include _1170 {
+			padding: 100px 0;
+		}
+		@include _979 {
+			padding: 50px 0;
+		}
+		@include _600 {
+			padding: 20px 0;
+		}
 	}
-	@include _979 {
-		padding: 50px 0;
-	}
-	@include _600 {
-		padding: 20px 0;
-	}
-}
-
-.slide {
 	&__title,
 	&__text {
-		color: #ffffff;
+		color: white;
 		text-align: center;
 	}
 	&__title {
@@ -639,7 +639,7 @@ body {
 		}
 	}
 	&__text {
-		font-size: 12px;
+		font-size: 16px;
 		line-height: 36px;
 		text-transform: uppercase;
 		letter-spacing: 1.2px;
@@ -647,24 +647,23 @@ body {
 }
 
 // ---------------------------------section-clients-------------------------------------
-.clients {
-	&__wrap {
+.clients-img-slider {
+	&__wrapper {
 		display: flex;
 		justify-content: space-between;
-		@include _768 {
-			align-items: center;
-		}
-		img {
-			@include _768 {
-				padding: 0 20px;
-			}
-		}
+		align-items: center;
+		padding: 50px 0 50px 0;
 	}
-}
-.label {
-	padding: 67px 0;
-	@include _979 {
-		padding: 40px 0;
+	&__slide {
+		width: 20%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	img {
+		@include _768 {
+			padding: 0 20px;
+		}
 	}
 }
 
