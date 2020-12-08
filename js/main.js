@@ -1,29 +1,23 @@
 $(document).ready(function () {
 
-	$('.slick-slider').slick({
-		autoplay: true,
-		utoplaySpeed: 3000,
-		arrows: false,
-		dots: true,
+	$('.flickity-carusel').flickity({
+		cellAlign: 'left',
+		contain: true,
+		autoPlay: 3000,
 	});
 
 	if ($(window).width() <= 768) {
-		$('.services__wrap').slick({
-			autoplay: true,
-			utoplaySpeed: 3000,
-			arrows: false,
-			dots: true,
+		$('.services__wrap').flickity({
+			cellAlign: 'left',
+			contain: true,
+			autoPlay: 3000,
 		});
 
-		$('.clients__wrap').slick({
-			autoplay: true,
-			utoplaySpeed: 3000,
-			arrows: false,
-			infinite: true,
-			slidesToShow: 3,
-			slidesToScroll: 3
+		$('.clients__wrap').flickity({
+			cellAlign: 'left',
+			contain: true,
+			autoPlay: 3000,
 		});
-
 	}
 
 	// ============== bureger=================
