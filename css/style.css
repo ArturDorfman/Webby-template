@@ -120,6 +120,13 @@ p {
   width: 180px;
   height: 54px;
   background-color: #10c9c3;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  line-height: normal;
 }
 @media (max-width: 979px) {
   .button {
@@ -131,19 +138,6 @@ p {
   .button {
     width: 200px;
     height: 60px;
-  }
-}
-.button span {
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  line-height: normal;
-}
-@media (max-width: 480px) {
-  .button span {
     font-size: 18px;
   }
 }
@@ -503,6 +497,11 @@ p {
 }
 .header__links:hover {
   color: #10c9c3;
+}
+@media (max-width: 768px) {
+  .header__links:hover {
+    color: black;
+  }
 }
 @media (max-width: 979px) {
   .header__links {
@@ -1172,53 +1171,53 @@ p {
   }
 }
 
-.project {
+.contact-us {
   background-color: #f5f5f5;
 }
-.project__content {
+.contact-us__content {
   margin: 0 auto;
   width: 57.264957265%;
   padding: 100px 0 100px 0;
 }
 @media (max-width: 1170px) {
-  .project__content {
+  .contact-us__content {
     padding: 50px 0 50px 0;
     width: 80%;
   }
 }
 @media (max-width: 979px) {
-  .project__content {
+  .contact-us__content {
     padding: 30px 0 30px;
   }
 }
-.project__form {
+.contact-us__form {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.project__info {
+.contact-us__info {
   margin: 0 auto;
   width: 80%;
 }
 @media (max-width: 768px) {
-  .project__info {
+  .contact-us__info {
     width: 100%;
   }
 }
-.project__title {
+.contact-us__title {
   font-size: 30px;
   line-height: 84px;
   letter-spacing: 0.3px;
   text-align: center;
 }
 @media (max-width: 768px) {
-  .project__title {
+  .contact-us__title {
     font-size: 25px;
     line-height: 60px;
   }
 }
-.project__text {
+.contact-us__text {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
@@ -1226,7 +1225,7 @@ p {
   padding-bottom: 38px;
 }
 @media (max-width: 768px) {
-  .project__text {
+  .contact-us__text {
     font-size: 14px;
     line-height: 20px;
     padding-bottom: 25px;

@@ -101,6 +101,9 @@ body {
 		text-transform: uppercase;
 		&:hover {
 			color: $primary-color;
+			@include _768 {
+				color: black;
+			}
 		}
 		@include _979 {
 			font-size: 14px;
@@ -669,7 +672,7 @@ body {
 }
 
 // ---------------------------------section-project-------------------------------------
-.project {
+.contact-us {
 	background-color: #f5f5f5;
 	&__content {
 		margin: 0 auto;

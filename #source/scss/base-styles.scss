@@ -47,6 +47,13 @@ p {
 	width: 180px;
 	height: 54px;
 	background-color: $primary-color;
+	color: #ffffff;
+	font-family: $title-font;
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	line-height: normal;
 	@include _979 {
 		width: 160px;
 		height: 40px;
@@ -54,18 +61,6 @@ p {
 	@include _480 {
 		width: 200px;
 		height: 60px;
-	}
-
-	span {
-		color: #ffffff;
-		font-family: $title-font;
-		font-size: 12px;
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 1.2px;
-		line-height: normal;
-		@include _480 {
-			font-size: 18px;
-		}
+		font-size: 18px;
 	}
 }
